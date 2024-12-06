@@ -1,0 +1,4 @@
+source_dir = "./testing/"
+output_dir = "./output/"
+overwrite = false
+formats = [".mkv"]
