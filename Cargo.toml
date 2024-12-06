@@ -7,3 +7,5 @@ edition = "2021"
 serde = { version = "*", features = ["derive"] }
 toml = "*"
 structopt = "*"
+walkdir = "*"
+csv = "*"

@@ -1,4 +1,6 @@
 source_dir = "./testing/"
 output_dir = "./output/"
-overwrite = false
-formats = [".mkv"]
+encode_dir = "/tmp/encode/"
+overwrite = true
+formats = ["mkv"]
+conv_to = "mp4"

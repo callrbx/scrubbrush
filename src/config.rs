@@ -3,14 +3,18 @@ use toml::de::Error;
 
 use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Deserialize, Debug)]
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Config {
-    source_dir: String,
-    output_dir: String,
-    overwrite: bool,
-    preset: Option<String>,
-    hb_path: Option<PathBuf>,
-    formats: Vec<String>,
+    pub source_dir: PathBuf,
+    pub output_dir: PathBuf,
+    pub encode_dir: Option<PathBuf>,
+    pub overwrite: bool,
+    pub csv_file: Option<PathBuf>,
+    pub preset: Option<String>,
+    pub hb_path: Option<String>,
+    pub formats: Vec<String>,
+    pub conv_to: String,
 }
 
 impl Config {
